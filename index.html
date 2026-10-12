@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- viewport-fit=cover: 아이폰 노치·홈 바 영역까지 앱 배경으로 채웁니다 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>우리둘</title>
+
+    <!--
+      홈 화면에 추가했을 때 앱처럼(주소창 없이 전체 화면) 열리게 하는 설정.
+      경로의 /wooridul 은 app.json 의 experiments.baseUrl(= GitHub 저장소 이름)과 같아야 해요.
+    -->
+    <link rel="manifest" href="/wooridul/manifest.json" />
+    <link rel="apple-touch-icon" href="/wooridul/icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="우리둘" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+        /* 앱이 뜨기 전 잠깐 보이는 배경도 앱과 같은 색으로 */
+        background-color: #fff7f9;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  <meta name="theme-color" content="#FFF7F9">
+<meta name="description" content="둘만의 일정, 기념일, 추억을 한 곳에">
+<link rel="icon" href="/wooridul/favicon.ico"/></head>
+
+  <body>
+    <noscript>
+      이 앱을 사용하려면 JavaScript 를 켜 주세요.
+    </noscript>
+    <!-- The root element for your Expo app. -->
+    <div id="root"></div>
+  <script src="/wooridul/_expo/static/js/web/entry-348bf7b9d0ec0f1b5cdfb12ad8d104bb.js" defer></script>
+</body>
+</html>
